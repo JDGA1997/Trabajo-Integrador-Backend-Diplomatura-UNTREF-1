@@ -1,0 +1,17 @@
+{
+    "name": "nombre-del-proyecto",
+    "version": "1.0.0",
+    "description": "Descripcion del proyecto",
+    "main": "app.js",
+    "scripts": {
+      "start": "node --watch app.js",
+      "test": "jest"
+    },
+    "keywords": ["node", "express", "mongodb"],
+    "author": "Juan Diego Gonzalez Antoniazzi",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.19.2",
+      "mongoose": "^8.4.4"
+    }
+  }
