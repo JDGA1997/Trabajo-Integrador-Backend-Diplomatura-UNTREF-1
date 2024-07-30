@@ -1,3 +1,0 @@
-PORT = 3080
-MONGODB_URLSTRING = "mongodb+srv://<user>:<password>@cluster0.g8levrr.mongodb.net/<nombre_de_la_base_de_datos>"
-DATABASE_NAME = nombre_bbdd

@@ -1,41 +1,41 @@
-### Pagina Principal
+### Página Principal
 GET http://localhost:3080/
-
 
 ### Lista de todos los productos
 GET http://localhost:3080/productos
 
-
-### Obtener toda la lista de los productos segun su categoria
+### Obtener toda la lista de los productos según su categoría
 GET http://localhost:3080/productos?categoria=Accesorios
-
 
 ### Buscar los productos por su nombre
 GET http://localhost:3080/productos?nombre=Impresoras
 
-
-### Obtener un producto por su id (Codigo en la db)
+### Obtener un producto por su id (Código en la db)
 GET http://localhost:3080/productos/8
-
 
 ### Agregar un nuevo producto
 POST http://localhost:3080/productos/
 Content-Type: application/json
- {
-    "nombre": "Macbook",
-    "precio": 1499,
-    "categoria": "Portátiles"
- }
 
+{
+	"codigo": 77,
+	"nombre": "Macbook",
+	"precio": 1499,
+	"categoria": "Portátiles"
+}
 
 ### Actualizar y/o Modificar un producto
 PUT http://localhost:3080/productos/a7f3e9d2c4b8150694e8d3f7
 Content-Type: application/json
- {
-    "nombre": "Macbook Pro",
-    "categoria": "Portátiles"
- }
 
+{
+	"codigo": 77,
+	"nombre": "Macbook Pro",
+	"categoria": "Portátiles"
+}
 
-###Eliminar un producto por su _id
+### Eliminar un producto por su _id
 DELETE http://localhost:3080/productos/a7f3e9d2c4b8150694e8d3f7
+
+### Ruta desconocida (Error 404)
+GET http://localhost:3080/usuarios
